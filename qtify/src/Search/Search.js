@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Search.module.css";
-import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg";
-import useAutocomplete from "@mui/base/useAutocomplete";
+import { SearchOutlined as SearchIcon } from "@mui/icons-material";
+import { useAutocomplete } from "@mui/base/useAutocomplete";
 import { styled } from "@mui/system";
-import { truncate } from "../../helpers/helpers";
+//import { truncate } from "../../helpers/helpers";
 import { useNavigate } from "react-router-dom";
 import { Tooltip } from "@mui/material";
 
@@ -67,7 +67,8 @@ function Search({ searchData, placeholder }) {
           onSubmit(e, value);
         }}
       >
-        <div {...getRootProps()}>
+        <div className={styles.searchBar} {...getRootProps()} >
+          {/* <div className={styles.search}> */}
           <input
             name="album"
             className={styles.search}
@@ -75,11 +76,12 @@ function Search({ searchData, placeholder }) {
             required
             {...getInputProps()}
           />
-        </div>
-        <div>
+          {/* </div>
+          <div className={styles.searchButton}> */}
           <button className={styles.searchButton} type="submit">
             <SearchIcon />
           </button>
+          {/* </div> */}
         </div>
       </form>
       {groupedOptions.length > 0 ? (
@@ -100,7 +102,7 @@ function Search({ searchData, placeholder }) {
                   <p className={styles.albumTitle}>{option.title}</p>
 
                   <p className={styles.albumArtists}>
-                    {truncate(artists.join(", "), 40)}
+                    {/* {truncate(artists.join(", "), 40)} */}
                   </p>
                 </div>
               </li>

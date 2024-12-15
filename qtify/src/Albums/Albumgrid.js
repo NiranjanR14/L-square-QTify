@@ -4,6 +4,7 @@ import {Grid2, Typography, Chip, Button} from "@mui/material";
 import { Box } from "@mui/system";
 import Albumcard from "./Albumcard";
 import styles from "./Albumgrid.module.css"
+import { Title } from "@mui/icons-material";
 
 export default function Albumgrid () {
 
@@ -43,8 +44,8 @@ export default function Albumgrid () {
         
         <Grid2 className={styles.albumgrid}>
             <div className={styles.topcontent}>
-            <title style={{color:"white"}}>Top Album</title> 
-            <Button style={{padding:"0px", backgroundColor:"black", color:"rgba(52, 201, 75, 1)", fontFamily: "Poppins"}}>Collapse</Button>  
+            <Typography style={{color:"white", fontFamily: "Poppins", fontSize: "20px"}}>Top Album</Typography> 
+            <Button style={{padding:"0px", fontSize: "20px", backgroundColor:"black", color:"rgba(52, 201, 75, 1)", fontFamily: "Poppins"}}>Collapse</Button>  
             </div>
           {!(albums.length==0) ? 
             <Grid2 container sx={{maxWidth: "100%", height: "fit-content"}} rowSpacing={3} >
@@ -52,7 +53,7 @@ export default function Albumgrid () {
                   <Grid2 size={{lg:2, md:4, sm:2}} key={album.id} className={styles.center}>
                     <div style={{color: "white", width: "159px"}}>
                     <Albumcard album={album}/>
-                    <div >
+                    <div style={{color: "white", fontSize: "14px"}}>
                     {album.title}
                     </div>
                     

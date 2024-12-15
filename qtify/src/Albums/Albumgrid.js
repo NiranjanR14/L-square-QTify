@@ -43,7 +43,7 @@ export default function Albumgrid () {
         
         <Grid2 className={styles.albumgrid}>
             <div className={styles.topcontent}>
-            <p style={{color:"white"}}>Top Album</p> 
+            <title style={{color:"white"}}>Top Album</title> 
             <Button style={{padding:"0px", backgroundColor:"black", color:"rgba(52, 201, 75, 1)", fontFamily: "Poppins"}}>Collapse</Button>  
             </div>
           {!(albums.length==0) ? 

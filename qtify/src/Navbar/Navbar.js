@@ -6,6 +6,7 @@ import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
 
 function Navbar({ searchData }) {
+  const feedback = "Give Feedback";
   return (
     
     <nav className={styles.navbar}>
@@ -16,7 +17,7 @@ function Navbar({ searchData }) {
         placeholder="Search a song of your choice"
         searchData={searchData}
       />
-      <Feedback/>
+      <Feedback text={feedback}/>
     </nav>
   );
 }

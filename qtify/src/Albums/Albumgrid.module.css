@@ -1,0 +1,22 @@
+.albumgrid {
+    height: fit-content;
+    background-color: black;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.topcontent {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+}
+

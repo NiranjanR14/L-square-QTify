@@ -1,12 +1,15 @@
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
+import Section from "../Albums/Section";
 
 function Home () {
     return (
         
-        <div style={{maxWidth: "100%"}}>
+        <div >
         <Navbar/>
         <Hero/>
+        
+        <Section/>
         </div>
     )
 }

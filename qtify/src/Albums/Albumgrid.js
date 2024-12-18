@@ -100,9 +100,9 @@ export default function Albumgrid () {
         //   setGenreVal(genres[0].key) 
         // }
 
-        genres.map((genre)=>(
-          console.log("Key : "+genre.key + "  Label : "+genre.label)
-        ))
+        // genres.map((genre)=>(
+        //   console.log("Key : "+genre.key + "  Label : "+genre.label)
+        // ))
 
         let filteredList = []
         for(let i=0;i<genres.length;i++){

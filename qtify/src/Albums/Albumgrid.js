@@ -144,7 +144,7 @@ export default function Albumgrid () {
         // setGenreVal(genres[0].key)  
         filterSongs(genres, songs);
         
-      }, [genres])
+      }, [genres, songs])
     
       const toggle = () => {
           if(carousel==false){

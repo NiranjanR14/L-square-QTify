@@ -19,7 +19,21 @@ const Carousel = ({
     <Swiper slidesPerView={6} spaceBetween={50} modules={[Navigation]}
     onBeforeInit={(swiper) => {
         swiperRef.current = swiper;
-      }}>
+      }}
+      breakpoints={{
+        // When window width is >= 640px
+        375: {
+          slidesPerView: 2,
+        },
+        // When window width is >= 768px
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 6,
+        }
+      }}
+      >
         
         {albums.map((album)=>(
             <SwiperSlide>

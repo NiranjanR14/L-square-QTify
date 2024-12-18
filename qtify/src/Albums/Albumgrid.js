@@ -66,7 +66,7 @@ export default function Albumgrid () {
       const toggle = () => {
           if(carousel==false){
             setCarousel(true)
-            setToggle("See All")
+            setToggle("Show All")
           }
           else{
             setCarousel(false)
@@ -77,7 +77,7 @@ export default function Albumgrid () {
       const toggle2 = () => {
         if(carousel2==false){
           setCarousel2(true)
-          setToggle2("See All")
+          setToggle2("Show All")
         }
         else{
           setCarousel2(false)

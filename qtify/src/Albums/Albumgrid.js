@@ -136,7 +136,7 @@ export default function Albumgrid () {
 
       useEffect(()=>{
 
-      }, [carousel, carousel2])
+      }, [carousel, carousel2, filteredVals])
 
       useEffect(()=>{
         

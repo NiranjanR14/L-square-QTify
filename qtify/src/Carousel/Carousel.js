@@ -11,6 +11,7 @@ import "swiper/css";
 
 const Carousel = ({
     albums,
+    type,
 }) => {
 
     const swiperRef = useRef();
@@ -38,7 +39,7 @@ const Carousel = ({
         {albums.map((album)=>(
             <SwiperSlide>
             <div style={{color: "white", width: "159px"}}>
-            <Albumcard album={album}/>
+            <Albumcard album={album} type={type}/>
             <div style={{color: "white", fontSize: "14px", marginTop: "6px"}}>
             {album.title}
             </div>

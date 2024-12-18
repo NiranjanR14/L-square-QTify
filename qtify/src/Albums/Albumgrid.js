@@ -180,7 +180,7 @@ export default function Albumgrid () {
         
         <Grid2 className={styles.albumgrid}>
             <div className={styles.topcontent}>
-            <Typography style={{color:"white", fontFamily: "Poppins", fontSize: "20px"}}>Top Album</Typography> 
+            <Typography style={{color:"white", fontFamily: "Poppins", fontSize: "20px"}}>Top Albums</Typography> 
             <Button onClick={()=>toggle()} style={{padding:"0px", fontSize: "20px", backgroundColor:"black", color:"rgba(52, 201, 75, 1)", fontFamily: "Poppins"}}>{toggleVal}</Button>  
             </div>
           {!(albums.length==0) ? 
@@ -211,7 +211,7 @@ export default function Albumgrid () {
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'fit-content', backgroundColor:"black", border:"none" }}>
         <Grid2 className={styles.albumgrid}>
             <div className={styles.topcontent}>
-            <Typography style={{color:"white", fontFamily: "Poppins", fontSize: "20px"}}>New Album</Typography> 
+            <Typography style={{color:"white", fontFamily: "Poppins", fontSize: "20px"}}>New Albums</Typography> 
             <Button onClick={()=>toggle2()} style={{padding:"0px", fontSize: "20px", backgroundColor:"black", color:"rgba(52, 201, 75, 1)", fontFamily: "Poppins"}}>{toggleVal2}</Button>  
             </div>
           {!(newAlbums.length==0) ? 

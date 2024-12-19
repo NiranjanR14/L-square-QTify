@@ -201,7 +201,7 @@ export default function Albumgrid () {
                   </Grid2>      
                 ))}
             </Grid2> : 
-            <div><Carousel albums={albums}/></div> 
+            <div><Carousel albums={albums} type="album"/></div> 
           ) : 
             <Grid2></Grid2>
               }
@@ -232,7 +232,7 @@ export default function Albumgrid () {
                   </Grid2>      
                 ))}
             </Grid2> : 
-            <div><Carousel albums={albums}/></div> 
+            <div><Carousel albums={newAlbums} type="album"/></div> 
           ) : 
             <Grid2></Grid2>
               }

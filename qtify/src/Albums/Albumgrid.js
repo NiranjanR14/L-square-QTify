@@ -19,10 +19,10 @@ export default function Albumgrid () {
     const [genres, setGenres] = useState([]);
     const [genreVal, setGenreVal] = useState("all");
     
-    const [carousel, setCarousel] = useState(false)
-    const [carousel2, setCarousel2] = useState(false)
-    const [toggleVal, setToggle] = useState("Collapse")
-    const [toggleVal2, setToggle2] = useState("Collapse")
+    const [carousel, setCarousel] = useState(true)
+    const [carousel2, setCarousel2] = useState(true)
+    const [toggleVal, setToggle] = useState("Show all")
+    const [toggleVal2, setToggle2] = useState("Show all")
     const [filteredVals, setFilteredVals] = useState([]);
 
     let url = "https://qtify-backend-labs.crio.do/albums/top"
